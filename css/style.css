@@ -1,17 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 
 :root {
-  --CRed-color: #e31b22;
-  --CBlue-color: #00539b;
-  --CBlue-dark-color: #063a68;
-  --black-color: black;
-  --background-color: rgb(27, 27, 27);
-  --lightgrey-color: rgb(167, 162, 162);
-  --white-color: white;
-  --grey-color: #555756;
-  --basically-black: #0a0a0a;
-  --bold-font-weight: bold;
-  --darkred: #c00424;
+    --CRed-color: #e31b22;
+    --CBlue-color: #00539b;
+    --CBlue-dark-color: #063a68;
+    --black-color: black;
+    --background-color: rgb(27, 27, 27);
+    --lightgrey-color: rgb(167, 162, 162);
+    --white-color: white;
+    --grey-color: #555756;
+    --basically-black: #0a0a0a;
+    --bold-font-weight: bold;
+    --darkred: #c00424;
 }
 
 * {
@@ -19,27 +19,21 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
-  }
-  body {
-    font-family: 'Poppins', sans-serif;
-    /* background-color: var(--background-color); */
-  }
-  
+}
 
-  
-  
-  /*****************************/
-  /* Navbar Start*/
-  /*****************************/
-  
-  .navbar-logo {
-    display: flex;
-    align-items: center;
-    height: 69px;
-    width: 190px;
-  }
-  
-  header {
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-color);
+}
+
+
+
+
+/*****************************/
+/* Navbar Start*/
+/*****************************/
+
+header {
     z-index: 999;
     position: fixed;
     top: 0;
@@ -51,14 +45,14 @@
     padding: 20px 100px;
     transition: 0.48s ease;
     padding-left: 2%;
-  }
-  
-  header.sticky {
+}
+
+header.sticky {
     background: var(--black-color);
     padding: 15px 100px;
-  }
-  
-  header .menu {
+}
+
+header .menu {
     height: 5dvh;
     position: relative;
     display: flex;
@@ -66,9 +60,9 @@
     align-items: center;
     transition: all 0.5s ease-out;
     transition-property: right;
-  }
-  
-  header .menu a {
+}
+
+header .menu a {
     color: var(--white-color);
     font-size: 16px;
     font-weight: 500;
@@ -76,9 +70,9 @@
     padding: 0 10px;
     border-radius: 20px;
     transition: 0.3s ease;
-  }
-  
-  header .menu a:hover {
+}
+
+header .menu a:hover {
     background: var(--CRed-color);
     border-radius: 20px;
     padding-top: 5px;
@@ -88,24 +82,24 @@
     transition: 0.3s ease;
     color: var(--white-color);
     transition: 0.3s ease;
-  }
-  
-  header .nav-btn {
+}
+
+header .nav-btn {
     color: var(--white-color);
     font-size: 25px;
     cursor: pointer;
     display: none;
-  }
-  
-  /*****************************/
-  /* Navbar End*/
+}
 
-  /*****************************/
+/*****************************/
+/* Navbar End*/
 
-  .section-main {
+/*****************************/
+
+.section-main {
     position: relative;
     width: 100%;
-    min-height: 100dvh;
+    height: 100dvh;
     background-image: url("https://muralsyourway.vtexassets.com/arquivos/ids/236304/Columbus-Ohio-Skyline-Mural-Wallpaper.jpg?v=638165404917430000");
     background-attachment: fixed;
     background-position: center;
@@ -116,71 +110,77 @@
     align-items: center;
     padding: 20px 100px;
     text-align: center;
-  }
-
-#main-section{
-    padding: auto;
-    background-color: var(--basically-black);
 }
 
-  .main{
-    min-height: 100dvh;
+#main-section {
+    margin-bottom: 15px;
+    padding: auto;
+    background-color: rebeccapurple;
+}
+
+.main {
+    height: 100dvh;
     padding: 0;
     margin: 0px 15px 15px 15px;
     background-color: gold;
 
-  }
-  .main2{
-    min-height: 100dvh;
+}
+
+.main2 {
+    height: 100dvh;
     padding: 0;
     margin: 15px;
     background-color: blue;
-    
-  }
-  .main3{
-    min-height: 100dvh;
+
+}
+
+.main3 {
+    height: 100dvh;
     padding: 0;
     margin: 15px;
     background-color: yellow;
-    
-  }
-  .main4{
-    min-height: 100dvh;
+
+}
+
+.main4 {
+    height: 100dvh;
     padding: 0;
     margin: 15px;
     background-color: orange;
-    
-  }
-  .main5{
-    min-height: 100dvh;
+
+}
+
+.main5 {
+    height: 100dvh;
     padding: 0;
     margin: 15px;
     background-color: green;
-    
-  }
-  .main6{
-    min-height: 100dvh;
+
+}
+
+.main6 {
+    height: 100dvh;
     padding: 0;
     margin: 15px;
     background-color: red;
-  }
+}
 
-  .main7{
-    min-height: 100dvh;
+.main7 {
+    height: 100dvh;
     padding: 0;
     margin: 15px;
     background-color: purple;
-    
-  }
 
-  .main8{
-    min-height: 100dvh;
+}
+
+.main8 {
+    height: 100dvh;
     padding: 0;
     margin: 15px;
     background-color: pink;
-  }
+}
 
-  .sub-section{
+.sub-section {
     background-color: aqua;
     padding: auto;
-  }
+}
