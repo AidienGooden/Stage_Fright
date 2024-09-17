@@ -4,8 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stage Fright</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    
+    <header>
+        <div class="menu">
+            <div class="nav-btn">
+              <i class="fas fa-times close-btn"></i>
+            </div>
+            <a href="#">Hotels</a>
+            <a href="#">Activities</a>
+            <a href="#">Transportation</a>
+            <a href="#">Restaraunts</a>
+          </div>
+          <div class="nav-btn">
+            <i class="fas fa-bars menu-btn"></i>
+          </div>
+    </header>
+    <main>
+        <div class="main"><p>1</p></div>
+        <div class="main2"><p>2</p></div>
+        <div class="main3"><p>3</p></div>
+        <div class="main4"><p>4</p></div>
+        <div class="main5"><p>5</p></div>
+        <div class="main6"><p>6</p></div>
+        <div class="main7"><p>7</p></div>
+        <div class="main8"><p>8</p></div>
+
+    </main>
+    <footer>
+        <script type="text/javascript">
+            window.addEventListener("scroll", function () {
+              var header = document.querySelector("header");
+              header.classList.toggle('sticky', window.scrollY > 500);
+            })
+          </script>
+        <script src="../js/index.js"></script>
+        <script src="https://kit.fontawesome.com/c4fc73ac8f.js" crossorigin="anonymous"></script>
+    </footer>
 </body>
 </html>

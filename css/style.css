@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+:root {
+  --CRed-color: #e31b22;
+  --CBlue-color: #00539b;
+  --CBlue-dark-color: #063a68;
+  --black-color: black;
+  --background-color: rgb(27, 27, 27);
+  --lightgrey-color: rgb(167, 162, 162);
+  --white-color: white;
+  --grey-color: #555756;
+  --basically-black: #0a0a0a;
+  --bold-font-weight: bold;
+  --darkred: #c00424;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+  }
+  body {
+    font-family: 'Poppins', sans-serif;
+    /* background-color: var(--background-color); */
+  }
+  
+
+  
+  
+  /*****************************/
+  /* Navbar Start*/
+  /*****************************/
+  
+  .navbar-logo {
+    display: flex;
+    align-items: center;
+    height: 69px;
+    width: 190px;
+  }
+  
+  header {
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+    transition: 0.48s ease;
+    padding-left: 2%;
+  }
+  
+  header.sticky {
+    background: var(--black-color);
+    padding: 15px 100px;
+  }
+  
+  header .menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease-out;
+    transition-property: right;
+  }
+  
+  header .menu a {
+    color: var(--white-color);
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0 30px;
+    padding: 0 10px;
+    border-radius: 20px;
+    transition: 0.3s ease;
+  }
+  
+  header .menu a:hover {
+    background: var(--CRed-color);
+    border-radius: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    transition: 0.3s ease;
+    color: var(--white-color);
+    transition: 0.3s ease;
+  }
+  
+  header .nav-btn {
+    color: var(--white-color);
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+  }
+  
+  /*****************************/
+  /* Navbar End*/
+  /*****************************/
+
+  .main{
+    min-height: 100dvh;
+    width: 100%;
+    padding: 0;
+    margin: 15px;
+    background-color: gold;
+
+  }
+  .main2{
+    min-height: 100dvh;
+    width: 100%;
+    padding: 0;
+    margin: 15px;
+    background-color: blue;
+    
+  }
+  .main3{
+    min-height: 100dvh;
+    width: 100%;
+    padding: 0;
+    margin: 15px;
+    background-color: yellow;
+    
+  }
+  .main4{
+    min-height: 100dvh;
+    width: 100%;
+    padding: 0;
+    margin: 15px;
+    background-color: orange;
+    
+  }
+  .main5{
+    min-height: 100dvh;
+    width: 100%;
+    padding: 0;
+    margin: 15px;
+    background-color: green;
+    
+  }
+  .main6{
+    min-height: 100dvh;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 15px;
+    background-color: red;
+  }
+
+  .main7{
+    min-height: 100dvh;
+    width: 100%;
+    padding: 0;
+    margin: 15px;
+    background-color: purple;
+    
+  }
+
+  .main8{
+    min-height: 100dvh;
+    width: 100%;
+    padding: 0;
+    margin: 15px;
+    background-color: pink;
+    
+  }
