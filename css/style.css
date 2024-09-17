@@ -59,6 +59,7 @@
   }
   
   header .menu {
+    height: 5dvh;
     position: relative;
     display: flex;
     justify-content: center;
@@ -98,19 +99,39 @@
   
   /*****************************/
   /* Navbar End*/
+
   /*****************************/
+
+  .section-main {
+    position: relative;
+    width: 100%;
+    min-height: 100dvh;
+    background-image: url("https://muralsyourway.vtexassets.com/arquivos/ids/236304/Columbus-Ohio-Skyline-Mural-Wallpaper.jpg?v=638165404917430000");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 100px;
+    text-align: center;
+  }
+
+#main-section{
+    padding: auto;
+    background-color: var(--basically-black);
+}
 
   .main{
     min-height: 100dvh;
-    width: 100%;
     padding: 0;
-    margin: 15px;
+    margin: 0px 15px 15px 15px;
     background-color: gold;
 
   }
   .main2{
     min-height: 100dvh;
-    width: 100%;
     padding: 0;
     margin: 15px;
     background-color: blue;
@@ -118,7 +139,6 @@
   }
   .main3{
     min-height: 100dvh;
-    width: 100%;
     padding: 0;
     margin: 15px;
     background-color: yellow;
@@ -126,7 +146,6 @@
   }
   .main4{
     min-height: 100dvh;
-    width: 100%;
     padding: 0;
     margin: 15px;
     background-color: orange;
@@ -134,7 +153,6 @@
   }
   .main5{
     min-height: 100dvh;
-    width: 100%;
     padding: 0;
     margin: 15px;
     background-color: green;
@@ -142,8 +160,6 @@
   }
   .main6{
     min-height: 100dvh;
-    height: 100%;
-    width: 100%;
     padding: 0;
     margin: 15px;
     background-color: red;
@@ -151,7 +167,6 @@
 
   .main7{
     min-height: 100dvh;
-    width: 100%;
     padding: 0;
     margin: 15px;
     background-color: purple;
@@ -160,9 +175,12 @@
 
   .main8{
     min-height: 100dvh;
-    width: 100%;
     padding: 0;
     margin: 15px;
     background-color: pink;
-    
+  }
+
+  .sub-section{
+    background-color: aqua;
+    padding: auto;
   }
