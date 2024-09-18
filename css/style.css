@@ -61,7 +61,7 @@ header .menu {
     transition: all 0.5s ease-out;
     transition-property: right;
 }
-
+/* Navbar Buttons */
 header .menu a {
     color: var(--white-color);
     font-size: 16px;
@@ -180,9 +180,9 @@ header .nav-btn {
 }
 
 .sub-section {
-    margin: 5px 10px 10px 10px;
+    margin: 10px 10px 10px 10px;
     text-align: center;
     height: 50dvh;
     background-color: aqua;
-    padding: 5px;
+    padding: 10px;
 }
