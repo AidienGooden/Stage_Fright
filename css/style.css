@@ -113,74 +113,77 @@ header .nav-btn {
 }
 
 #main-section {
-    margin-bottom: 15px;
-    padding: auto;
-    background-color: rebeccapurple;
+    margin: 10px 5px 5px 5px;
+    padding: 5px;
+    background-color: var(--background-color);
 }
 
 .main {
     height: 100dvh;
-    padding: 0;
-    margin: 0px 15px 15px 15px;
+    padding: 5px;
+    margin: 0px 10px 10px 10px;
     background-color: gold;
 
 }
 
 .main2 {
     height: 100dvh;
-    padding: 0;
-    margin: 15px;
+    padding: 5px;
+    margin: 0px 10px 10px 10px;
     background-color: blue;
 
 }
 
 .main3 {
     height: 100dvh;
-    padding: 0;
-    margin: 15px;
+    padding: 5px;
+    margin: 0px 10px 10px 10px;
     background-color: yellow;
 
 }
 
 .main4 {
     height: 100dvh;
-    padding: 0;
-    margin: 15px;
+    padding: 5px;
+    margin: 0px 10px 10px 10px;
     background-color: orange;
 
 }
 
 .main5 {
     height: 100dvh;
-    padding: 0;
-    margin: 15px;
+    padding: 5px;
+    margin: 0px 10px 10px 10px;
     background-color: green;
 
 }
 
 .main6 {
     height: 100dvh;
-    padding: 0;
-    margin: 15px;
+    padding: 5px;
+    margin: 0px 10px 10px 10px;
     background-color: red;
 }
 
 .main7 {
     height: 100dvh;
-    padding: 0;
-    margin: 15px;
+    padding: 5px;
+    margin: 0px 10px 10px 10px;
     background-color: purple;
 
 }
 
 .main8 {
     height: 100dvh;
-    padding: 0;
-    margin: 15px;
+    padding: 5px;
+    margin: 0px 10px 10px 10px;
     background-color: pink;
 }
 
 .sub-section {
+    margin: 5px 10px 10px 10px;
+    text-align: center;
+    height: 50dvh;
     background-color: aqua;
-    padding: auto;
+    padding: 5px;
 }
