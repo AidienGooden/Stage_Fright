@@ -61,15 +61,20 @@ header .menu {
     transition: all 0.5s ease-out;
     transition-property: right;
 }
-/* Navbar Buttons */
+
+/* Navbar Buttons Start*/
 header .menu a {
     color: var(--white-color);
     font-size: 16px;
     font-weight: 500;
-    margin: 0 30px;
+    margin: 0px 30px 0px 30px;
     padding: 0 10px;
     border-radius: 20px;
     transition: 0.3s ease;
+}
+
+header .menu .first-button{
+    /* margin-left: 500px; */
 }
 
 header .menu a:hover {
@@ -84,12 +89,15 @@ header .menu a:hover {
     transition: 0.3s ease;
 }
 
+/* Mobile View Buttons */
 header .nav-btn {
     color: var(--white-color);
     font-size: 25px;
     cursor: pointer;
     display: none;
 }
+
+/* Navbar Buttons End*/
 
 /*****************************/
 /* Navbar End*/
@@ -186,3 +194,41 @@ header .nav-btn {
     background-color: aqua;
     padding: 10px;
 }
+
+/* Navbar Media Query */
+@media(max-width: 1060px) {
+    header .nav-btn {
+      display: block;
+    }
+  
+    header .menu {
+      position: fixed;
+      background: var(--black-color);
+      flex-direction: column;
+      min-width: 400px;
+      height: 100dvh;
+      top: 0;
+      right: -100%;
+      padding: 80px 50px;
+      transition: all 0.5s ease-out;
+      transition-property: right;
+    }
+  
+    header .menu.active {
+      right: 0;
+    }
+  
+    header .menu .close-btn {
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin: 25px;
+    }
+  
+    header .menu a {
+      display: block;
+      font-size: 20px;
+      margin: 20px;
+      padding: 0 15px;
+    }
+  }
