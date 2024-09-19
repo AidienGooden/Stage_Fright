@@ -1,17 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 
 :root {
-    --CRed-color: #e31b22;
-    --CBlue-color: #00539b;
-    --CBlue-dark-color: #063a68;
-    --black-color: black;
-    --background-color: rgb(27, 27, 27);
-    --lightgrey-color: rgb(167, 162, 162);
-    --white-color: white;
-    --grey-color: #555756;
+    --Red: #e31b22;
+    --Blue: #00539b;
+    --Dark-blue: #063a68;
+    --black: black;
+     --background: rgb(27, 27, 27);
+    --lightgrey: rgb(167, 162, 162);
+    --whiter: white;
+    --grey: #555756;
     --basically-black: #0a0a0a;
-    --bold-font-weight: bold;
     --darkred: #c00424;
+    --white: #ffffff;
 }
 
 * {
@@ -23,9 +23,8 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: var(--background-color);
+    background-color: var(--background);
 }
-
 
 
 
@@ -48,7 +47,7 @@ header {
 }
 
 header.sticky {
-    background: var(--black-color);
+    background: var(--black);
     padding: 15px 100px;
 }
 
@@ -64,7 +63,7 @@ header .menu {
 
 /* Navbar Buttons Start*/
 header .menu a {
-    color: var(--white-color);
+    color: var(--white);
     font-size: 16px;
     font-weight: 500;
     margin: 0px 30px 0px 30px;
@@ -73,31 +72,29 @@ header .menu a {
     transition: 0.3s ease;
 }
 
-header .menu .first-button{
-    /* margin-left: 500px; */
-}
+/* header .menu .first-button{
+    margin-left: 500px;
+} */
 
 header .menu a:hover {
-    background: var(--CRed-color);
+    background: var(--Red);
     border-radius: 20px;
     padding-top: 5px;
     padding-bottom: 5px;
     padding-left: 15px;
     padding-right: 15px;
     transition: 0.3s ease;
-    color: var(--white-color);
+    color: var(--white);
     transition: 0.3s ease;
 }
 
 /* Mobile View Buttons */
 header .nav-btn {
-    color: var(--white-color);
+    color: var(--white);
     font-size: 25px;
     cursor: pointer;
     display: none;
 }
-
-/* Navbar Buttons End*/
 
 /*****************************/
 /* Navbar End*/
@@ -106,8 +103,8 @@ header .nav-btn {
 .section-main {
     position: relative;
     width: 100%;
-    height: 100dvh;
-    background-image: url("https://muralsyourway.vtexassets.com/arquivos/ids/236304/Columbus-Ohio-Skyline-Mural-Wallpaper.jpg?v=638165404917430000");
+    height: 80dvh;
+    background-image: url("https://images4.alphacoders.com/783/783866.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -119,6 +116,15 @@ header .nav-btn {
     text-align: center;
 }
 
+.section-main{
+  color: var(--white);
+  font-size: 80px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 80px;
+}
+
 #main-section {
     margin: 10px 5px 5px 5px;
     padding: 5px;
@@ -126,14 +132,14 @@ header .nav-btn {
 }
 
 .main {
-    height: 100dvh;
+    height: auto;
     padding: 5px;
     margin: 0px 10px 10px 10px;
     background-color: gold;
 
 }
 
-.main2 {
+/* .main2 {
     height: 100dvh;
     padding: 5px;
     margin: 0px 10px 10px 10px;
@@ -185,7 +191,7 @@ header .nav-btn {
     padding: 5px;
     margin: 0px 10px 10px 10px;
     background-color: pink;
-}
+} */
 
 /* .sub-section {
     margin: 10px 10px 10px 10px;
@@ -199,8 +205,8 @@ header .nav-btn {
 /* Image Overlay effect Start*/
 /********************************/
 
-.main .about{
-    background: var(--black-color);
+.main .member{
+    background: var(--black);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -208,17 +214,17 @@ header .nav-btn {
     padding: 10rem 0;
     margin: 5px 5px 5px 5px;
 }
-.main .about h1{
+.main .member h1{
     font-size: 2.5rem;
     margin-bottom: 4.5rem;
 }
-.main .about-wrapper{
+.main .member-wrapper{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     gap: 12px;
 }
-.main .about-cards{
+.main .member-cards{
     margin: 10px; 
     height: 425px;
     width: 410px;
@@ -229,7 +235,7 @@ header .nav-btn {
     transition: 1.15s ease;
 }
 
-.main .about-cards img{
+.main .member-cards img{
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -237,7 +243,7 @@ header .nav-btn {
     display: block;
 }
 
-.main .about-cards:hover{
+.main .member-cards:hover{
     transform: scale(1.05);
     transition: .8s ease;
 }
@@ -262,283 +268,166 @@ header .nav-btn {
     transition: 1.5s ease;
   }
 
-  .main .about-cards .overlay h2 {
+  .main .member-cards .overlay h2 {
     font-weight: 800;
     margin-bottom: 0px;
-    margin-top: 80%;
+    margin-top: 50%;
     font-size: 30px;
     letter-spacing: 2px;
-    color: var(--white-color);
+    color: var(--white);
     text-align: center;
   }
 
-  .main .about-cards .overlay p {
+  .main .member-cards .overlay p {
     font-weight: 600;
     margin-bottom: 5px;
     font-size: 14px;
     letter-spacing: 1px;
-    color: var(--lightgrey-color);
+    color: var(--lightgrey);
     text-align: center;
   }
   
-  .main .about-cards .overlay a {
+  .main .member-cards .overlay a {
     margin-top: 10px;
-    color: var(--white-color);
+    color: var(--white);
     text-decoration: none;
     font-size: 14px;
-    background: var(--CRed-color);
+    background: var(--Red);
     border-radius: 50px;
     text-align: center;
     padding: 5px 15px;
     transition: 0.45s ease;
   }
-/* 
-  .about-cards:hover img {
-    transform: scale(1.0);
-  } */
 
-  .main .about-cards:hover .overlay {
-    height: 165%;
+  .main .member-cards:hover .overlay {
+    height: 130%;
     transition: 1.35s ease;
   }
   
-  .main .about-cards a:hover {
+  .main .member-cards a:hover {
     transform: scale(1.1);
     transition: 0.45s ease;
     background-color: var(--darkred);
   } 
 
+/********************************/
+/* Image Overlay effect End*/
+/********************************/
 
-/* 
-.card-container{
 
-}
-
-.card{
-    border-radius: 10px;
-    position: relative;
-    overflow: hidden;
-    height: 425px;
-    width: 410px;
+/********************************/
+    /* About Section Start*/
+/********************************/
+  .about-band-section{
+    background: var(--black);
     display: flex;
-    flex-wrap: wrap;
-}
-
-.card img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 10px;
-    display: block;
-    transition: 0.5s ease-out;
-}
-
-.overlay {
-    height: 0;
-    width: 100%;
-    background: linear-gradient(transparent, black 95%);
-    border-radius: 5px;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
-    padding: 0 40px;
-    text-align: center;
-    font-size: 14px;
-    transition: 1.5s ease;
+    /* justify-content: center;
+    align-items: center; */
+    padding: 10rem 5rem;
+    margin: 5px 5px 5px 5px;
   }
 
-  .card .overlay h3 {
+  #about-header{
     font-weight: 800;
     margin-bottom: 5px;
-    margin-top: 80%;
-    font-size: 30px;
+    font-size: 50px;
     letter-spacing: 2px;
-    color: var(--white-color);
+    color: var(--white);
     text-align: center;
   }
-  
-  .card .overlay a {
-    margin-top: 10px;
-    color: var(--white-color);
-    text-decoration: none;
-    font-size: 14px;
-    background: var(--CRed-color);
-    border-radius: 50px;
-    text-align: center;
-    padding: 5px 15px;
-    transition: 0.45s ease;
-  }
 
-  .card:hover img {
-    transform: scale(1.2);
-  }
-
-  .card:hover .overlay {
-    height: 165%;
-    transition: 1.35s ease;
-  }
-  
-  .card a:hover {
-    transform: scale(1.1);
-    transition: 0.45s ease;
-    background-color: var(--darkred);
-  }  */
-
-/* 
-.overlay-wrapper {
-    padding-right: 75px;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    text-align: center;
-  }
-  
-  #card-area {
-    padding: 50px 0;
-    margin: 0px 0px 0px 20px;
-  }
-  
-  .box-area {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(257px, 1fr));
-  }
-  
-  .overlay-box {
-    border-radius: 10px;
-    position: relative;
-    overflow: hidden;
-    height: 425px;
-    width: 410px;
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
-  .overlay-boxr h3 {
-    font-weight: 800;
-    font-size: 40px;
-    letter-spacing: 2px;
-    color: var(--white-color);
-  }
-  
-  .overlay-boxr p {
-    font-weight: 500;
+  .about-text{
+    font-weight: 600;
+    margin-bottom: 5px;
     font-size: 25px;
     letter-spacing: 1px;
-    color: var(--lightgrey-color);
-    padding: 10px;
-  }
-  
-  .overlay-box img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 10px;
-    display: block;
-    transition: 0.5s ease-out;
-  }
-  
-  .overlay {
-    height: 0;
-    width: 100%;
-    background: linear-gradient(transparent, black 95%);
-    border-radius: 5px;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 0 40px;
+    color: var(--lightgrey);
     text-align: center;
-    font-size: 14px;
-    transition: 1.5s ease;
   }
-  
-  .overlay h3 {
-    font-weight: 800;
+
+  #band-member1{
+    font-weight: 700;
     margin-bottom: 5px;
-    margin-top: 80%;
-    font-size: 30px;
+    font-size: 40px;
+    padding: 10px;
+    margin: 10px;
     letter-spacing: 2px;
-    color: var(--white-color);
-    text-align: center;
-  }
-  
-  .overlay a {
-    margin-top: 10px;
-    color: var(--white-color);
-    text-decoration: none;
-    font-size: 14px;
-    background: var(--CRed-color);
-    border-radius: 50px;
-    text-align: center;
-    padding: 5px 15px;
-    transition: 0.45s ease;
-  }
-  
-  .overlay-box:hover img {
-    transform: scale(1.2);
-  }
-  
-  .overlay-box:hover .overlay {
-    height: 165%;
-    transition: 1.35s ease;
-  }
-  
-  .overlay-box a:hover {
-    transform: scale(1.1);
-    transition: 0.45s ease;
-    background-color: var(--darkred);
-  } */
-
-/* .about-cards{
-    display: block;
-    margin: 5px 5px 5px 55px;
-    padding: 5px;
-    height: 30dvh;
-    width: 25dvh;
-    background-color: black;
-    display: flex;
-    flex-wrap: wrap;
-    position: relative;
-} */
-
-
-/* @media screen and (max-height:1200px) {
-    .box-area {
-      grid-gap: 175px;
-    }
+    color: var(--white);
   }
 
+  #band-member2{
+    font-weight: 700;
+    margin-bottom: 5px;
+    font-size: 40px;
+    padding: 10px;
+    margin: 10px;
+    letter-spacing: 2px;
+    color: var(--white);
+  }
 
-@media screen and (max-width: 600px) {
-    .overlay-wrapper {
-    }
+  #band-member3{
+    font-weight: 700;
+    margin-bottom: 5px;
+    font-size: 40px;
+    padding: 10px;
+    margin: 10px;
+    letter-spacing: 2px;
+    color: var(--white);
+  }
+
+  #band-member4{
+    font-weight: 700;
+    margin-bottom: 5px;
+    font-size: 40px;
+    padding: 10px;
+    margin: 10px;
+    letter-spacing: 2px;
+    color: var(--white);
+  }
   
-    .overlay-box {
-      width: 425px;
-    }
-  
-    .overlay h3 {
-      font-size: 20px;
-      font-weight: 800;
-    }
-  
-    .overlay p {
-      font-size: 16px;
-    }
-  
-    .overlay-wrapper .section-titles h3 {
-    }
-  
-  } */
+  .band-member-text{
+    font-weight: 600;
+    margin-bottom: 5px;
+    font-size: 25px;
+    letter-spacing: 1px;
+    color: var(--lightgrey);
+    margin-left: 50px;
+  }
+
+.about-band-section #hr1{
+  width: 10%;
+  margin: 0px 0px 15px 0px;
+  border: 1px solid var(--Red);
+}
+
+.about-band-section #hr2{
+  width: 15%;
+  margin: 0px 0px 15px 0px;
+  border: 1px solid red;
+}
+
+.about-band-section #hr3{
+  width: 20%;
+  margin: 0px 0px 15px 0px;
+  border: 1px solid red;
+}
+
+.about-band-section #hr4{
+  width: 25%;
+  margin: 0px 0px 15px 0px;
+  border: 1px solid red;
+}
+
+/********************************/
+    /* About Section End*/
+/********************************/
+
+
+
+/***************************************/
+     /* Media Query Section Start*/
+/*************************************/
 
 /* Navbar Media Query */
 @media(max-width: 1060px) {
@@ -548,7 +437,7 @@ header .nav-btn {
   
     header .menu {
       position: fixed;
-      background: var(--black-color);
+      background: var(--black);
       flex-direction: column;
       /*width: 400px; */
       height: 100dvh;
@@ -578,3 +467,7 @@ header .nav-btn {
       padding: 0 15px;
     }
   }
+
+  /***************************************/
+     /* Media Query Section End*/
+/*************************************/
