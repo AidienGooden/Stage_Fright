@@ -187,104 +187,72 @@ header .nav-btn {
     background-color: pink;
 }
 
-.sub-section {
+/* .sub-section {
     margin: 10px 10px 10px 10px;
     text-align: center;
     height: 50dvh;
     background-color: aqua;
     padding: 10px;
-}
-
-
+} */
 
 /********************************/
 /* Image Overlay effect Start*/
 /********************************/
 
-/*Services Section CSS - AKA *The Cards*/
-.about{
-    background: #323232;
+.main .about{
+    background: var(--black-color);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100%;
-    padding: 10rem 0; /*10rem 0 10rem 0*/
+    padding: 10rem 0;
+    margin: 5px 5px 5px 5px;
 }
-.about h1{
-    background: #ff8177;
-    background-image: linear-gradient(to bottom,#e24c65,#aba6f3 );
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.main .about h1{
     font-size: 2.5rem;
-    margin-bottom: 5rem;
+    margin-bottom: 4.5rem;
 }
-.about-wrapper{
+.main .about-wrapper{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
+    gap: 12px;
 }
-.about-cards{
+.main .about-cards{
     margin: 10px; 
     height: 425px;
-    width: 300px;
-    border-radius: 7px;
+    width: 410px;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    color: #FFF;
-    transition: 1.35s ease;
+    transition: 1.15s ease;
 }
 
-.about-cards img{
+.main .about-cards img{
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 10px;
     display: block;
-    transition: 0.5s ease-out;
 }
 
-.about-cards h2{
-    text-align: center;
-}
-.about-cards p{
-    font-size: 1.5rem;
-    margin-top: 20px;
-    text-align: center;
-}
-.about-cards:hover{
-    transform: scale(1.1);
-    transition: .8s ease-in-out;
-}
-/*for repeated items-AKA NTH CHILD*/
-.about-cards:nth-child(2){
-    /*fallback for old browsers ie, chrome verison 10-25*/
-    background: #00dbde;
-    background: -webkit-linear-gradient(to right, #a6ffcb, #12d8fa, #1fa2ff);
-    /* fallback for old browsers ie, chrome verison 10-25*/
-    background: linear-gradient(to right, #a6ffcb, #12d8fa, #1fa2ff);
-}
-.about-cards:nth-child(3){
-    background: #00dbde;
-    background: -webkit-linear-gradient(to right, #a6ffcb, #12d8fa, #1fa2ff);
-    /* fallback for old browsers ie, chrome verison 10-25*/
-    background: linear-gradient(to right, #a6ffcb, #12d8fa, #1fa2ff);
-}
-.about-cards:last-child{
-    background-image: linear-gradient(-225deg, #231557 0%, #44107a 33%, #ff1361 66%, #fff800 100%);
+.main .about-cards:hover{
+    transform: scale(1.05);
+    transition: .8s ease;
 }
 
-.overlay {
+.main .overlay {
     height: 0;
     width: 100%;
     background: linear-gradient(transparent, black 95%);
     border-radius: 5px;
+    /* change this to fix overlay */
+
     position: absolute;
     left: 0;
     bottom: 0;
+
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -296,17 +264,26 @@ header .nav-btn {
     transition: 1.5s ease;
   }
 
-  .about-cards .overlay h3 {
+  .main .about-cards .overlay h2 {
     font-weight: 800;
-    margin-bottom: 5px;
+    margin-bottom: 0px;
     margin-top: 80%;
     font-size: 30px;
     letter-spacing: 2px;
     color: var(--white-color);
     text-align: center;
   }
+
+  .main .about-cards .overlay p {
+    font-weight: 600;
+    margin-bottom: 5px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: var(--lightgrey-color);
+    text-align: center;
+  }
   
-  .about-cards .overlay a {
+  .main .about-cards .overlay a {
     margin-top: 10px;
     color: var(--white-color);
     text-decoration: none;
@@ -322,12 +299,12 @@ header .nav-btn {
     transform: scale(1.0);
   } */
 
-  .about-cards:hover .overlay {
-    height: 105%;
+  .main .about-cards:hover .overlay {
+    height: 165%;
     transition: 1.35s ease;
   }
   
-  .about-cards a:hover {
+  .main .about-cards a:hover {
     transform: scale(1.1);
     transition: 0.45s ease;
     background-color: var(--darkred);
