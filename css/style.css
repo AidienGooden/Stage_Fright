@@ -248,11 +248,9 @@ header .nav-btn {
     background: linear-gradient(transparent, black 95%);
     border-radius: 5px;
     /* change this to fix overlay */
-
     position: absolute;
     left: 0;
     bottom: 0;
-
     overflow: hidden;
     display: flex;
     align-items: center;
