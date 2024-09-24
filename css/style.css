@@ -451,6 +451,7 @@ header .nav-btn {
     position: fixed;
     background: rgba(0, 0, 0, 0.7);
     flex-direction: column;
+    width: 300px;
     height: 100dvh;
     top: 0;
     right: -100%;
@@ -461,7 +462,6 @@ header .nav-btn {
 
   header .menu.active {
     right: 0;
-    /* filter: blur(5px); */
   }
 
   header .menu .close-btn {
@@ -489,6 +489,7 @@ header .nav-btn {
 
 @media screen and (max-width: 600px) {
   header {
+
     justify-content: space-between;
   }
 
