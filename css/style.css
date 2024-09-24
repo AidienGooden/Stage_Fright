@@ -37,14 +37,14 @@ header {
   left: 0;
   width: 100%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   padding: 20px 100px;
   transition: 0.48s ease;
   padding: 0.5%;
 }
 
 header.sticky {
-  background: var(--black);
+  background: rgba(0, 0, 0, 0.95);
   padding: 20px 100px;
 }
 
@@ -91,7 +91,6 @@ header .nav-btn {
 }
 
 .navbar-logo {
-  margin-top: 10px;
   display: flex;
   align-items: center;
   height: 175px;
@@ -222,20 +221,29 @@ header .nav-btn {
 }
 
 .main .member-wrapper {
-  display: grid;
+  /* display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr;
-  gap: 12px;
+  gap: 12px; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .main .member-cards {
-  margin: 10px;
+  /* margin: 10px;
   height: 425px;
   width: 410px;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  transition: 1.15s ease; */
+  position: relative;
+  border-radius: 10px;
+  width: 410px;
+  height: 425px;
+  margin: 10px;
   transition: 1.15s ease;
 }
 
@@ -244,7 +252,6 @@ header .nav-btn {
   height: 100%;
   object-fit: cover;
   border-radius: 10px;
-  display: block;
 }
 
 .main .member-cards:hover {
@@ -253,12 +260,12 @@ header .nav-btn {
 }
 
 .main .overlay {
-  height: 0;
+  /* height: 0;
   width: 100%;
   background: linear-gradient(transparent, black 95%);
-  border-radius: 5px;
+  border-radius: 5px; */
   /* change this to fix overlay */
-  position: absolute;
+  /* position: absolute;
   left: 0;
   bottom: 0;
   overflow: hidden;
@@ -269,13 +276,28 @@ header .nav-btn {
   padding: 0 40px;
   text-align: center;
   font-size: 14px;
+  transition: 1.5s ease; */
+  width: 100%;
+  height: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(transparent, black 95%);
   transition: 1.5s ease;
+  border-radius: 5px;
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 40px;
+  text-align: center;
 }
 
 .main .member-cards .overlay h2 {
   font-weight: 800;
   margin-bottom: 0px;
-  margin-top: 50%;
+  /* margin-top: 50%; */
   font-size: 30px;
   letter-spacing: 2px;
   color: var(--white);
@@ -304,7 +326,7 @@ header .nav-btn {
 }
 
 .main .member-cards:hover .overlay {
-  height: 130%;
+  height: 110%;
   transition: 1.35s ease;
 }
 
@@ -443,7 +465,7 @@ header .nav-btn {
 
   header .menu {
     position: fixed;
-    background: var(--black);
+    background: rgba(0, 0, 0, 0.95);
     flex-direction: column;
     /*width: 400px; */
     height: 100dvh;
@@ -474,9 +496,6 @@ header .nav-btn {
   }
 
   /*Responsive styling for services section*/
-  main .member-wrapper {
-    grid-template-columns: 1fr 1fr;
-  }
 
   main .member-cards {
     height: 350px;
@@ -487,13 +506,8 @@ header .nav-btn {
 
 @media screen and (max-width: 600px) {
   header {
-    margin: 15px 0px 0px 35px;
-    justify-content: space-between;
-  }
 
-  main .member {
-    margin: 0;
-    padding: 0;
+    justify-content: space-between;
   }
 
   main .member-cards {
@@ -503,11 +517,7 @@ header .nav-btn {
   }
 }
 
-@media screen and (max-width: 750px) {
-  main .member-wrapper{
-    grid-template-columns: 1fr;
-}
-}
+@media screen and (max-width: 750px) {}
 
 /***************************************/
 /* Media Query Section End*/
