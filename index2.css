@@ -1,0 +1,228 @@
+:root {
+  --Red: #e31b22;
+  --Blue: #00539b;
+  --Dark-blue: #063a68;
+  --black: black;
+  --white: white;
+  --background: rgb(27, 27, 27);
+  --lightgrey: rgb(167, 162, 162);
+  --grey: #555756;
+  --basically-black: #0a0a0a;
+  --darkred: #c00424;
+  --background-light: #F3F4F8;
+  --primary: #907dda;
+  --primary-dark: darken(#907dda,4%);
+  --accent: #e5e4ea;
+  --font-light: #e7e6f1;
+  --font-dark: #333;
+  --grey: #BDC4D0;
+  --background-light: #F3F4F8;
+  --background-dark: #2F3032;
+  --border-light: darken($background-light, 2%);
+  --border-dark: darken($background-dark, 2%);
+}
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif
+}
+
+.section-main {
+  position: relative;
+  width: 100%;
+  height: 85dvh;
+  background-image: url("https://images4.alphacoders.com/783/783866.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 100px;
+  text-align: center;
+}
+
+.section-main h1 {
+  color: var(--background-light);
+  font-size: 80px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 80px;
+}
+ .member {
+  background: var(--background-light);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10rem 0;
+  margin: 5px 5px 5px 5px;
+}
+
+.member h1 {
+  font-weight: 600;
+  font-size: 50px;
+  letter-spacing: 2px;
+  color: var(--background-dark);
+  text-align: center;
+  margin-bottom: 3rem;
+  border-bottom: solid #00539b;
+  border-radius: 20px;
+  border-width: 5px;
+  padding-bottom: 25px;
+}
+
+.member-wrapper {
+  /* display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 12px; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.member-cards {
+  /* margin: 10px;
+  height: 425px;
+  width: 410px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: 1.15s ease; */
+  position: relative;
+  border-radius: 10px;
+  width: 410px;
+  height: 425px;
+  margin: 10px;
+  transition: 1.15s ease;
+}
+
+.member-cards img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.member-cards:hover {
+  transform: scale(1.05);
+  transition: .8s ease;
+}
+
+.overlay {
+  height: 0;
+  width: 100%;
+  background: linear-gradient(transparent, black 100%);
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 40px;
+  text-align: center;
+  font-size: 14px;
+  transition: 1.15s ease;
+}
+
+.member-cards .overlay h2 {
+  font-weight: 800;
+  margin-bottom: 0px;
+  margin-top: 50%;
+  font-size: 30px;
+  letter-spacing: 2px;
+  color: var(--white);
+  text-align: center;
+}
+
+.member-cards .overlay p {
+  font-weight: 600;
+  margin-bottom: 5px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: var(--lightgrey);
+  text-align: center;
+}
+
+.member-cards .overlay a {
+  margin-top: 10px;
+  color: var(--white);
+  text-decoration: none;
+  font-size: 14px;
+  margin-bottom: 100px;
+  background: var(--Red);
+  border-radius: 50px;
+  text-align: center;
+  padding: 5px 15px;
+  transition: 0.45s ease;
+}
+
+.member-cards:hover .overlay {
+  height: 105%;
+  transition: 1.25s ease;
+}
+
+.member-cards a:hover {
+  transform: scale(1.1);
+  transition: 0.45s ease;
+  background-color: var(--darkred);
+}
+
+
+/***************************************/
+/* Media Query Section Start*/
+/*************************************/
+
+/* Navbar Media Query */
+@media screen and (max-width: 1000px) {
+  /*Responsive styling for services section*/
+  main .member-cards {
+    height: 350px;
+    width: 275px;
+    margin: 2rem;
+  }
+}
+
+@media screen and (max-width: 918px){
+
+}
+
+@media screen and (max-width: 600px) {
+ .member-cards {
+    height: 325px;
+    width: 250px;
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  #band-member1{
+    margin-left: 0px;
+  }
+
+  #band-member2{
+    margin-left: 0px;
+  }
+
+  #band-member3{
+    margin-left: 0px;
+  }
+
+  #band-member4{
+    margin-left: 0px;
+  }
+}
+
+/***************************************/
+/* Media Query Section End*/
+/*************************************/

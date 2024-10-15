@@ -3,13 +3,23 @@
   --Blue: #00539b;
   --Dark-blue: #063a68;
   --black: black;
+  --white: white;
   --background: rgb(27, 27, 27);
   --lightgrey: rgb(167, 162, 162);
-  --whiter: white;
   --grey: #555756;
   --basically-black: #0a0a0a;
   --darkred: #c00424;
-  --white: #ffffff;
+  --background-light: #F3F4F8;
+  --primary: #907dda;
+  --primary-dark: darken(#907dda,4%);
+  --accent: #e5e4ea;
+  --font-light: #e7e6f1;
+  --font-dark: #333;
+  --grey: #BDC4D0;
+  --background-light: #F3F4F8;
+  --background-dark: #2F3032;
+  --border-light: darken($background-light, 2%);
+  --border-dark: darken($background-dark, 2%);
 }
 
 * {
@@ -17,11 +27,11 @@
   margin: 0;
   padding: 0;
   text-decoration: none;
-  font-family: sans-serif;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif
 }
 
 body {
-  background-color: var(--background);
+  background-color: var(--background-light);
 }
 
 
@@ -49,7 +59,6 @@ header.sticky {
 }
 
 header .menu {
-  /* margin-left: 450px; */
   height: 5dvh;
   position: relative;
   display: flex;
@@ -90,12 +99,12 @@ header .nav-btn {
   display: none;
 }
 
-.navbar-logo {
+/* .navbar-logo {
   display: flex;
   align-items: center;
   height: 175px;
   width: 200px;
-}
+} */
 
 /*****************************/
 /* Navbar End*/
@@ -118,7 +127,7 @@ header .nav-btn {
 }
 
 .section-main h1 {
-  color: var(--white);
+  color: var(--background-light);
   font-size: 80px;
   font-weight: 800;
   text-transform: uppercase;
@@ -129,14 +138,13 @@ header .nav-btn {
 #main-section {
   margin: 10px 5px 5px 5px;
   padding: 5px;
-  background-color: var(--background-color);
+  background-color: var(--background-light);
 }
 
 .main {
   height: auto;
   padding: 5px;
-  margin: 0px 10px 10px 10px;
-  background-color: gold;
+  background-color: var(--background-light);
 }
 
 /* .main2 {
@@ -206,7 +214,7 @@ header .nav-btn {
 /********************************/
 
 .main .member {
-  background: var(--black);
+  background: var(--white);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -216,8 +224,13 @@ header .nav-btn {
 }
 
 .main .member h1 {
-  font-size: 2.5rem;
-  margin-bottom: 4.5rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+  font-size: 50px;
+  letter-spacing: 2px;
+  color: var(--white);
+  text-align: center;
+  margin-bottom: 3rem;
 }
 
 .main .member-wrapper {
@@ -262,8 +275,8 @@ header .nav-btn {
 .main .overlay {
   height: 0;
   width: 100%;
-  background: linear-gradient(transparent, black 95%);
-  border-radius: 5px;
+  background: linear-gradient(transparent, black 100%);
+  border-radius: 10px;
   position: absolute;
   left: 0;
   bottom: 0;
@@ -302,6 +315,7 @@ header .nav-btn {
   color: var(--white);
   text-decoration: none;
   font-size: 14px;
+  margin-bottom: 100px;
   background: var(--Red);
   border-radius: 50px;
   text-align: center;
@@ -310,7 +324,7 @@ header .nav-btn {
 }
 
 .main .member-cards:hover .overlay {
-  height: 145%;
+  height: 105%;
   transition: 1.35s ease;
 }
 
@@ -335,74 +349,82 @@ header .nav-btn {
   /*  justify-content: center;
     align-items: center; */
   padding: 10rem 5rem;
-  margin: 5px 5px 5px 5px;
+  margin: 5px 0px 5px 0px;
 }
 
 #about-header {
-  font-weight: 800;
-  margin-bottom: 10px;
-  font-size: 50px;
-  letter-spacing: 2px;
+  font-weight: 400;
+	line-height: 2.5rem;
+	letter-spacing: 4px;
+  font-size: 2rem;
   color: var(--white);
   text-align: center;
+  border-bottom: thick green;
 }
 
 .about-text {
-  font-weight: 600;
+  font-weight: 300;
   margin-bottom: 5px;
-  font-size: 25px;
-  letter-spacing: 1px;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+	line-height: 1.6rem;
   color: var(--lightgrey);
   text-align: center;
 }
 
 #band-member1 {
-  font-weight: 700;
+  font-weight: 400;
   margin-bottom: 5px;
-  font-size: 40px;
+  font-size: 2rem;
   padding: 10px;
   margin: 10px;
-  letter-spacing: 2px;
+	line-height: 2.5rem;
+	letter-spacing: 4px;
   color: var(--white);
 }
 
 #band-member2 {
-  font-weight: 700;
+  font-weight: 400;
   margin-bottom: 5px;
-  font-size: 40px;
+  font-size: 2rem;
   padding: 10px;
   margin: 10px;
-  letter-spacing: 2px;
-  color: var(--white);
+  line-height: 2.5rem;
+	letter-spacing: 4px;
+  color: var(--lightgrey);
 }
 
 #band-member3 {
-  font-weight: 700;
+  font-weight: 400;
   margin-bottom: 5px;
-  font-size: 40px;
+  font-size: 2rem;
   padding: 10px;
   margin: 10px;
-  letter-spacing: 2px;
+  line-height: 2.5rem;
+	letter-spacing: 4px;
   color: var(--white);
 }
 
 #band-member4 {
-  font-weight: 700;
+  font-weight: 400;
   margin-bottom: 5px;
-  font-size: 40px;
+  font-size: 2rem;
   padding: 10px;
   margin: 10px;
-  letter-spacing: 2px;
+  line-height: 2.5rem;
+	letter-spacing: 4px;
   color: var(--white);
 }
 
 .band-member-text {
-  font-weight: 600;
+  text-align: center;
+  width: 1000px;
+  font-weight: 300;
   margin-bottom: 5px;
-  font-size: 25px;
-  letter-spacing: 1px;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+	line-height: 1.6rem;
   color: var(--lightgrey);
-  margin-left: 50px;
 }
 
 .about-band-section #hr1 {
