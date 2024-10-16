@@ -2,108 +2,125 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stage Fright</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <title>Document</title>
 </head>
 
 <body>
-    <header>
-        <!--------------------------------->
-        <!-- Navbar Start -->
-        <!-------------------------------->
+  <!--NAVBAR SECTION-->
+  <nav class="navbar">
+    <div class="navbar_container">
+      <!--navbar container-->
+      <a href="#" id="navbar_logo"><i class="fa-solid fa-gem"></i>&nbsp;&nbsp;Stage Fright</a><!--logo container-->
+      <div class="navbar_toggle" id="mobile-menu">
+        <!--mobile nav menu-->
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul class="navbar_menu">
+        <!--menu list-->
+        <li class="navbar_item">
+          <a href="#home" class="navbar_link" id="home-page">
+            Home
+          </a>
+        </li>
+        <li class="navbar_item">
+          <a href="#member" class="navbar_link" id="about-page">
+            About Us
+          </a>
+        </li>
+        <li class="navbar_item">
+          <a href="#about" class="navbar_link" id="services-page">
+            Services
+          </a>
+        </li>
+        <li class="navbar_button">
+          <a href="#" class="button"> Sign Up </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
-
-
-
-        <!--------------------------------->
-        <!-- Navbar End -->
-        <!-------------------------------->
-
-    </header>
-        <section class="section-main">
-            <h1>Stage <span>Fright</span></h1>
-        </section>  
-            <div class="main">
-                <div class="member" id="member">
-                    <h1>Our Services</h1>
-                    <div class="member-wrapper">
-                        <div class="member-cards">
-                            <img src="../res/Blondie_Small.jpg" alt="">
-                            <div class="overlay">
-                                <h2>Aidien Gooden</h2>
-                                <p>Lead Vocalist</p>
-                                <a href="#">Learn More</a>
-                            </div>
-                        </div>
-                        <div class="member-cards">
-                            <img src="../res/Blondie_Small.jpg" alt="">
-                            <div class="overlay">
-                                <h2>Sean Kalb</h2>
-                                <p>Lead Guitarist</p>
-                                <a href="#">Learn More</a>
-                            </div>
-                        </div>
-                        <div class="member-cards">
-                            <img src="../res/Blondie_Small.jpg" alt="">
-                            <div class="overlay">
-                                <h2>Jabari Hill</h2>
-                                <p>Drummer</p>
-                                <a href="#">Learn More</a>
-                            </div>
-                        </div>
-                        <div class="member-cards">
-                            <img src="../res/Blondie_Small.jpg" alt="">
-                            <div class="overlay">
-                                <h2>Gabe Zeigler</h2>
-                                <p>Bass Guitarist</p>
-                                <!-- write an html attributse that contains index-->
-                                <a href="#">Learn More</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="about-band-section">
-                    <h1 id="about-header">About</h1>
-                    <p class="about-text">Stage Fright is an up-and-coming rock band. We are </p>
-                    <h1 id="band-member1">Aidien Gooden</h1>
-                    <p class="band-member-text"> The lead vocalist of Stage Fright, He got into Music at a young age.
-                        His father put him in choir and he gained a love of singing. Aidien is the joy of the group he
-                        knows how to make people laugh. </p>
-                    <hr id="hr1">
-                    <h1 id="band-member2">Sean Kalb</h1>
-                    <hr id="hr2">
-                    <p class="band-member-text"></p>
-                    <h1 id="band-member3">Jabari Hill</h1>
-                    <hr id="hr3">
-                    <p class="band-member-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam aperiam sapiente non deleniti, nulla molestias possimus dolores reprehenderit debitis? Impedit, repellendus aliquam? Itaque, doloribus. Soluta atque magnam praesentium reiciendis amet.</p>
-                    <h1 id="band-member4">Gabe Zeigler</h1>
-                    <hr id="hr4">
-                    <p class="band-member-text"></p>
-                </div>
-            </div>
-            <!-- <div class="main2"></div>
-            <div class="main3"></div>
-            <div class="main4"></div>
-            <div class="main5"></div>
-            <div class="main6"></div>
-            <div class="main7"></div>
-            <div class="main8">></div> -->
+  <section class="section-main" id="home">
+    <h1>Stage<span>Fright</span></h1>
+  </section>
+  <!-- Member Sectiion -->
+  <div class="member" id="member">
+    <h1>Our Members</h1>
+    <div class="member-wrapper">
+      <div class="member-cards">
+        <img src="../res/Blondie_Small.jpg" alt="" />
+        <div class="overlay">
+          <h2>Aidien Gooden</h2>
+          <p>Lead Vocalist</p>
+          <a href="#">Learn More</a>
         </div>
-    </main>
-    <footer>
-        <script type="text/javascript">
-            window.addEventListener("scroll", function () {
-                var header = document.querySelector("header");
-                header.classList.toggle('sticky', window.scrollY > 680);
-            })
-        </script>
-        <script src="../js/index.js"></script>
-        <script src="https://kit.fontawesome.com/c4fc73ac8f.js" crossorigin="anonymous"></script>
-    </footer>
+      </div>
+      <div class="member-cards">
+        <img src="../res/Blondie_Small.jpg" alt="" />
+        <div class="overlay">
+          <h2>Sean Kalb</h2>
+          <p>Lead Guitarist</p>
+          <a href="#">Learn More</a>
+        </div>
+      </div>
+      <div class="member-cards">
+        <img src="../res/Blondie_Small.jpg" alt="" />
+        <div class="overlay">
+          <h2>Jabari Hill</h2>
+          <p>Drummer</p>
+          <a href="#">Learn More</a>
+        </div>
+      </div>
+      <div class="member-cards">
+        <img src="../res/Blondie_Small.jpg" alt="" />
+        <div class="overlay">
+          <h2>Gabe Zeigler</h2>
+          <p>Bass Guitarist</p>
+          <!-- write an html attributse that contains index-->
+          <a href="#">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- About Section -->
+
+  <div class="about-band-section" id="about">
+    <h1 id="about-header">About</h1>
+    <p class="about-text">
+      Stage Fright is an up-and-coming rock band. We are
+    </p>
+
+    <h1 id="band-member1">Aidien Gooden</h1>
+    <p class="band-member-text">
+      The lead vocalist of Stage Fright, He got into Music at a young age. His
+      father put him in choir and he gained a love of singing. Aidien is the
+      joy of the group he knows how to make people laugh.
+    </p>
+    <h1 id="band-member2">Sean Kalb</h1>
+    <p class="band-member-text"></p>
+    <h1 id="band-member3">Jabari Hill</h1>
+    <p class="band-member-text">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam aperiam
+      sapiente non deleniti, nulla molestias possimus dolores reprehenderit
+      debitis? Impedit, repellendus aliquam? Itaque, doloribus. Soluta atque
+      magnam praesentium reiciendis amet.
+    </p>
+    <h1 id="band-member4">Gabe Zeigler</h1>
+    <p class="band-member-text"></p>
+  </div>
+  <footer>
+    <script src="../js/index.js"></script>
+    <script type="text/javascript">
+      window.addEventListener("scroll", function () {
+        document.body.classList.toggle("scrolled", window.scrollY > 775);
+      });
+    </script>
+  </footer>
 </body>
 
 </html>

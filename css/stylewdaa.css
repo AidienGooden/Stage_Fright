@@ -1,0 +1,546 @@
+:root {
+  --Red: #e31b22;
+  --Blue: #00539b;
+  --Dark-blue: #063a68;
+  --black: black;
+  --white: white;
+  --background: rgb(27, 27, 27);
+  --lightgrey: rgb(167, 162, 162);
+  --grey: #555756;
+  --basically-black: #0a0a0a;
+  --darkred: #c00424;
+  --background-light: #F3F4F8;
+  --primary: #907dda;
+  --primary-dark: darken(#907dda,4%);
+  --accent: #e5e4ea;
+  --font-light: #e7e6f1;
+  --font-dark: #333;
+  --grey: #BDC4D0;
+  --background-light: #F3F4F8;
+  --background-dark: #2F3032;
+  --border-light: darken($background-light, 2%);
+  --border-dark: darken($background-dark, 2%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif
+}
+
+body {
+  background-color: var(--background-light);
+}
+
+
+
+/*****************************/
+/* Navbar Start*/
+/*****************************/
+
+header {
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 100px;
+  transition: 0.48s ease;
+  padding: 0.5%;
+}
+
+header.sticky {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 20px 100px;
+}
+
+header .menu {
+  height: 5dvh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  transition: all 0.5s ease-out;
+  transition-property: right;
+}
+
+
+/* Navbar Buttons Start*/
+header .menu a {
+  color: var(--white);
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0px 30px 0px 30px;
+  padding: 0 10px;
+  border-radius: 20px;
+  transition: 0.3s ease;
+
+}
+
+header .menu a:hover {
+  background: var(--Red);
+  border-radius: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: var(--white);
+  transition: 0.3s ease;
+}
+
+/* Mobile View Buttons */
+header .nav-btn {
+  color: var(--white);
+  font-size: 25px;
+  cursor: pointer;
+  display: none;
+}
+
+/* .navbar-logo {
+  display: flex;
+  align-items: center;
+  height: 175px;
+  width: 200px;
+} */
+
+/*****************************/
+/* Navbar End*/
+/*****************************/
+
+.section-main {
+  position: relative;
+  width: 100%;
+  height: 85dvh;
+  background-image: url("https://images4.alphacoders.com/783/783866.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 100px;
+  text-align: center;
+}
+
+.section-main h1 {
+  color: var(--background-light);
+  font-size: 80px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 80px;
+}
+
+#main-section {
+  margin: 10px 5px 5px 5px;
+  padding: 5px;
+  background-color: var(--background-light);
+}
+
+.main {
+  height: auto;
+  padding: 5px;
+  background-color: var(--background-light);
+}
+
+/* .main2 {
+    height: 100dvh;
+    padding: 5px;
+    margin: 0px 10px 10px 10px;
+    background-color: blue;
+
+}
+
+.main3 {
+    height: 100dvh;
+    padding: 5px;
+    margin: 0px 10px 10px 10px;
+    background-color: yellow;
+
+}
+
+.main4 {
+    height: 100dvh;
+    padding: 5px;
+    margin: 0px 10px 10px 10px;
+    background-color: orange;
+
+}
+
+.main5 {
+    height: 100dvh;
+    padding: 5px;
+    margin: 0px 10px 10px 10px;
+    background-color: green;
+
+}
+
+.main6 {
+    height: 100dvh;
+    padding: 5px;
+    margin: 0px 10px 10px 10px;
+    background-color: red;
+}
+
+.main7 {
+    height: 100dvh;
+    padding: 5px;
+    margin: 0px 10px 10px 10px;
+    background-color: purple;
+
+}
+
+.main8 {
+    height: 100dvh;
+    padding: 5px;
+    margin: 0px 10px 10px 10px;
+    background-color: pink;
+} */
+
+/* .sub-section {
+    margin: 10px 10px 10px 10px;
+    text-align: center;
+    height: 50dvh;
+    background-color: aqua;
+    padding: 10px;
+} */
+
+/********************************/
+/* Image Overlay effect Start*/
+/********************************/
+
+.main .member {
+  background: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10rem 0;
+  margin: 5px 5px 5px 5px;
+}
+
+.main .member h1 {
+  font-weight: 800;
+  margin-bottom: 10px;
+  font-size: 50px;
+  letter-spacing: 2px;
+  color: var(--white);
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.main .member-wrapper {
+  /* display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 12px; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.main .member-cards {
+  /* margin: 10px;
+  height: 425px;
+  width: 410px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: 1.15s ease; */
+  position: relative;
+  border-radius: 10px;
+  width: 410px;
+  height: 425px;
+  margin: 10px;
+  transition: 1.15s ease;
+}
+
+.main .member-cards img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.main .member-cards:hover {
+  transform: scale(1.05);
+  transition: .8s ease;
+}
+
+.main .overlay {
+  height: 0;
+  width: 100%;
+  background: linear-gradient(transparent, black 100%);
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 40px;
+  text-align: center;
+  font-size: 14px;
+  transition: 1.5s ease;
+}
+
+.main .member-cards .overlay h2 {
+  font-weight: 800;
+  margin-bottom: 0px;
+  margin-top: 50%;
+  font-size: 30px;
+  letter-spacing: 2px;
+  color: var(--white);
+  text-align: center;
+}
+
+.main .member-cards .overlay p {
+  font-weight: 600;
+  margin-bottom: 5px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: var(--lightgrey);
+  text-align: center;
+}
+
+.main .member-cards .overlay a {
+  margin-top: 10px;
+  color: var(--white);
+  text-decoration: none;
+  font-size: 14px;
+  margin-bottom: 100px;
+  background: var(--Red);
+  border-radius: 50px;
+  text-align: center;
+  padding: 5px 15px;
+  transition: 0.45s ease;
+}
+
+.main .member-cards:hover .overlay {
+  height: 105%;
+  transition: 1.35s ease;
+}
+
+.main .member-cards a:hover {
+  transform: scale(1.1);
+  transition: 0.45s ease;
+  background-color: var(--darkred);
+}
+
+/********************************/
+/* Image Overlay effect End*/
+/********************************/
+
+
+/********************************/
+/* About Section Start*/
+/********************************/
+.about-band-section {
+  background: var(--black);
+  display: flex;
+  flex-direction: column;
+  /*  justify-content: center;
+    align-items: center; */
+  padding: 10rem 5rem;
+  margin: 5px 0px 5px 0px;
+}
+
+#about-header {
+  font-weight: 400;
+	line-height: 2.5rem;
+	letter-spacing: 4px;
+  font-size: 2rem;
+  color: var(--white);
+  text-align: center;
+  border-bottom: thick green;
+}
+
+.about-text {
+  font-weight: 300;
+  margin-bottom: 5px;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+	line-height: 1.6rem;
+  color: var(--lightgrey);
+  text-align: center;
+}
+
+#band-member1 {
+  font-weight: 400;
+  margin-bottom: 5px;
+  font-size: 2rem;
+  padding: 10px;
+  margin: 10px;
+	line-height: 2.5rem;
+	letter-spacing: 4px;
+  color: var(--white);
+}
+
+#band-member2 {
+  font-weight: 400;
+  margin-bottom: 5px;
+  font-size: 2rem;
+  padding: 10px;
+  margin: 10px;
+  line-height: 2.5rem;
+	letter-spacing: 4px;
+  color: var(--lightgrey);
+}
+
+#band-member3 {
+  font-weight: 400;
+  margin-bottom: 5px;
+  font-size: 2rem;
+  padding: 10px;
+  margin: 10px;
+  line-height: 2.5rem;
+	letter-spacing: 4px;
+  color: var(--white);
+}
+
+#band-member4 {
+  font-weight: 400;
+  margin-bottom: 5px;
+  font-size: 2rem;
+  padding: 10px;
+  margin: 10px;
+  line-height: 2.5rem;
+	letter-spacing: 4px;
+  color: var(--white);
+}
+
+.band-member-text {
+  text-align: center;
+  width: 1000px;
+  font-weight: 300;
+  margin-bottom: 5px;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+	line-height: 1.6rem;
+  color: var(--lightgrey);
+}
+
+.about-band-section #hr1 {
+  width: 10%;
+  margin: 20px 0px 15px 0px;
+  border: 1px solid var(--Red);
+}
+
+.about-band-section #hr2 {
+  width: 15%;
+  margin: 0px 0px 15px 0px;
+  border: 1px solid red;
+}
+
+.about-band-section #hr3 {
+  width: 20%;
+  margin: 0px 0px 15px 0px;
+  border: 1px solid red;
+}
+
+.about-band-section #hr4 {
+  width: 25%;
+  margin: 0px 0px 15px 0px;
+  border: 1px solid red;
+}
+
+/********************************/
+/* About Section End*/
+/********************************/
+
+
+
+/***************************************/
+/* Media Query Section Start*/
+/*************************************/
+
+/* Navbar Media Query */
+@media screen and (max-width: 1000px) {
+  /*Responsive styling for services section*/
+  main .member-cards {
+    height: 350px;
+    width: 275px;
+    margin: 2rem;
+  }
+}
+
+@media screen and (max-width: 918px){
+  header .nav-btn {
+    display: block;
+    margin: 15px 0px 0px 35px;
+    justify-content: space-between;
+  }
+
+  header .menu {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.7);
+    flex-direction: column;
+    width: 300px;
+    height: 100dvh;
+    top: 0;
+    right: -100%;
+    padding: 80px 50px;
+    transition: all 0.5s ease-out;
+    transition-property: right;
+  }
+
+  header .menu.active {
+    right: 0;
+  }
+
+  header .menu .close-btn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 25px;
+  }
+
+  header .menu a {
+    display: block;
+    font-size: 20px;
+    margin: 20px;
+    padding: 0 15px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  header {
+
+    justify-content: space-between;
+  }
+
+  main .member-cards {
+    height: 325px;
+    width: 250px;
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  #band-member1{
+    margin-left: 0px;
+  }
+
+  #band-member2{
+    margin-left: 0px;
+  }
+
+  #band-member3{
+    margin-left: 0px;
+  }
+
+  #band-member4{
+    margin-left: 0px;
+  }
+}
+
+/***************************************/
+/* Media Query Section End*/
+/*************************************/
