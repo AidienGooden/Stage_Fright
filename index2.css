@@ -1,5 +1,6 @@
 :root {
   --basically-black: #0a0a0a;
+  --white: #fff;
 
   --primary: #907dda;
   --primary-dark: #615399;
@@ -76,7 +77,7 @@
 }
 
 .navbar_link {
-  color: #fff;
+  color: var(--white);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -415,7 +416,7 @@ footer {
   }
 
   .navbar_menu.active {
-    background: var(--background-dark);
+    background: var(--basically-black);
     top: 100%;
     opacity: 1;
     transition: all .3s ease;
@@ -467,7 +468,11 @@ footer {
     transition: all .5s ease-in-out;
     display: block;
     cursor: pointer;
-    background: #fff;
+    background: var(--white);
+  }
+
+  .navbar_toggle:hover .bar{
+    background: var(--background-dark);
   }
 
   #mobile-menu.is-active .bar:nth-child(2) {
