@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
 :root {
   --basically-black: #0a0a0a;
   --white: #fff;
@@ -23,122 +25,136 @@
   --navbar-bg-color: transparent;
 }
 
-
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Kumbh-Sans", sans-serif;
-  scroll-behavior: smooth;
   text-decoration: none;
   list-style: none;
 }
 
-body{
-  background-image: url("https://images4.alphacoders.com/783/783866.jpg");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 85dvh;
+
+html {
+	scroll-behavior: smooth;
 }
 
-/*Navbar Menu Classes*/
-.navbar {
-  background: var(--navbar-bg-color);
-  height: 80px;
-  display: flex;
-  justify-content: center;
-  font-size: 1.2rem;
-  position: sticky;
-  top: 0;
-  z-index: 999;
-  transition: 0.8s ease;
+body {
+	font-family: "Poppins", sans-serif;
+	margin: 3rem 0 0 0;
 }
 
-.navbar_container {
-  display: flex;
-  justify-content: space-between;
-  height: 80px;
-  width: 100%;
-  max-width: 1300px;
-  margin: 0 auto;
-  padding: 0 50px;
-  z-index: 1;
+
+
+
+  /* =========== Navbar Section Start =========== */
+  /* ============================================ */
+
+/* LAYOUT =============================== */
+.container {
+	max-width: 968px;
+	margin-left: 1.5rem;
+	margin-right: 1.5rem;
 }
 
-.navbar_menu {
-  display: flex;
-  align-items: center;
-  list-style: none;
-  /*same as text-decoration:none;*/
+/* HEADER SECTION ========================== */
+.header {
+	width: 100%;
+	z-index: 9999;
+	background: transparent;
+	position: fixed;
+	top: 0;
+	left: 0;
+	transition: all 0.3s;
 }
 
-/* Changes the navbar color from trasnparent to a black color after scrolling */
-.scrolled .navbar {
-  background: var(--basically-black);
-  transition: 0.8s ease;
-  /* Darker color */
+.nav {
+	height: 3rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
-.navbar_item {
-  height: 80px;
+/* Navbar Logo */
+.logo,
+.nav-open {
+	color: #000;
+	font-weight: 500;
+	transition: 0.3s;
 }
 
-.navbar_link {
-  color: var(--white);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 125px;
-  height: 100%;
-  transition: all 0.3s ease;
+/* Navbar Logo Hover */
+.logo:hover,
+.nav-open:hover {
+	color: var(--primary);
 }
 
-.navbar_button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0 1rem;
-  width: 100%;
+.nav-open {
+	font-size: 1.2rem;
+	cursor: pointer;
 }
 
-.button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px 20px;
-  height: 100%;
-  width: 100%;
-  border: none;
-  outline: none;
-  border-radius: 5px;
-  background: #833ab4;
-  background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
-  background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
-  color: #fff;
+.nav-item {
+	margin-bottom: 1.5rem;
 }
 
-#navbar_logo {
-  background-image: linear-gradient(to bottom, #907dda, #615399);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  display: flex;
-  align-items: center;
-  font-size: 2rem;
+.nav-link {
+	font-size: 1.3rem;
+	color: #a5a5a5;
+	font-weight: 400;
+	transition: 0.3s;
 }
 
-.navbar_link:hover {
-  color: var(--primary);
-  transition: all 0.3s ease;
+.nav-link:hover {
+	color: #fff;
+	font-weight: 500;
 }
 
-.highlight {
-  border-bottom: 5px solid var(--primary);
+.nav-close {
+	color: #fff;
+	position: absolute;
+	top: 0.4rem;
+	right: 1.115rem;
+	font-size: 1.7rem;
+	cursor: pointer;
 }
 
+.show-menu {
+	top: 0;
+}
+
+/* Active Link ============================== */
+.active-link {
+	position: relative;
+	color: var(--white);
+	font-weight: 500;
+}
+
+.active-link::before {
+	content: "";
+	position: absolute;
+	bottom: -0.5rem;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 20px;
+	height: 5px;
+	background: var(--primary);
+	border-radius: 50px;
+}
+
+/* CHANGE THE BACKGROUND ON SCROLL ==================== */
+.scroll-header {
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+	background: var(--white);
+}
+
+  /* =========== Navbar Section End =========== */
+  /* ============================================ */
+
+
+
+
+  /* =========== Main Section Start =========== */
+  /* =========================================== */
 .section-main {
   position: relative;
   height: 85dvh;
@@ -164,6 +180,14 @@ body{
   line-height: 80px;
 }
 
+  /* =========== Main Section End =========== */
+  /* ========================================= */
+
+
+
+  
+  /* =========== Member Section Start =========== */
+  /* ============================================ */
 .member {
   background: var(--background-light);
   display: flex;
@@ -277,10 +301,12 @@ body{
   color: var(--font-lightest);
 }
 
+  /* =========== Member Section End =========== */
+  /* =========================================== */
 
-/********************************/
-/* About Section Start*/
-/********************************/
+
+  /* =========== About Section Start =========== */
+  /* ============================================ */
 .about-band-section {
   background: var(--accent);
   display: flex;
@@ -382,16 +408,33 @@ body{
   color: var(--font-dark);
 }
 
+  /* =========== About Section End =========== */
+  /* ============================================ */
+
+
+
+
+  /* =========== Footer Section Start =========== */
+  /* ============================================ */
 footer {
   background-color: var(--background-dark);
   padding: 100px;
 }
 
-/***************************************/
-/* Media Query Section Start*/
-/*************************************/
+  /* =========== Footer Section End =========== */
+  /* =========================================== */
 
-/* Navbar Media Query */
+
+
+
+  /* =========== Media Query Section Start =========== */
+  /* ================================================= */
+
+
+
+
+  /* =========== Desktop Media Query =========== */
+  /* ============================================ */
 @media screen and (max-width: 1000px) {
 
   /*Responsive styling for services section*/
@@ -495,9 +538,79 @@ footer {
     transform: translateY(-9px) rotate(-45deg);
   }
 
-  /********************************************/
+ 
 }
 
+
+
+
+  /* =========== Tablet Media Query =========== */
+  /* ================================================= */
+@media screen and (min-width: 767px) {
+	body {
+		margin: 0;
+	}
+
+
+	.nav {
+		height: 5rem;
+	}
+
+	.nav-list {
+		display: flex;
+		align-items: center;
+	}
+
+	.nav-item {
+		margin-left: 2.5rem;
+		margin-bottom: 0;
+	}
+
+	.nav-link,
+	.logo {
+		font-size: 1rem;
+		color: #000;
+	}
+
+	.nav-link:hover {
+		color: var(--primary);
+	}
+
+	.active-link {
+		color: var(--primary);
+	}
+
+	.active-link::before {
+		width: 6px;
+		height: 6px;
+		border-radius: 50%;
+	}
+
+	.nav-open,
+	.nav-close {
+		display: none;
+	}
+}
+
+
+@media screen and (max-width: 767px) {
+	.main-nav {
+		position: fixed;
+		top: -100%;
+		left: 0;
+		width: 100%;
+		padding: 3.5rem 0 1.5rem;
+		text-align: center;
+		background: #000;
+		transition: 0.4s;
+		box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+		z-index: 99999;
+	}
+}
+
+
+  /* =========== Mobile Media Query =========== */
+  /* ================================================= */
 
 @media screen and (max-width: 600px) {
   .member-cards {
@@ -507,25 +620,7 @@ footer {
   }
 }
 
+  /* =========== Media Query Section End =========== */
+  /* ================================================ */
 
-/* @media screen and (max-width: 750px) {
-  #band-member1 {
-    margin-left: 0px;
-  }
 
-  #band-member2 {
-    margin-left: 0px;
-  }
-
-  #band-member3 {
-    margin-left: 0px;
-  }
-
-  #band-member4 {
-    margin-left: 0px;
-  }
-} */
-
-/***************************************/
-/* Media Query Section End*/
-/*************************************/

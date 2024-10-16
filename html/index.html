@@ -3,123 +3,134 @@
 
 <head>
   <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="../css/style.css" />
+  <!-- BOXICONS =================================== -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
   <title>Document</title>
 </head>
 
 <body>
-  <!--NAVBAR SECTION-->
-  <nav class="navbar">
-    <div class="navbar_container">
-      <!--navbar container-->
-      <a href="#" id="navbar_logo"><i class="fa-solid fa-gem"></i>&nbsp;&nbsp;Stage Fright</a><!--logo container-->
-      <div class="navbar_toggle" id="mobile-menu">
-        <!--mobile nav menu-->
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#home" class="logo">Gabriel</a>
+
+      <div class="main-nav" id="main-nav">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#home" class="nav-link active-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#member" class="nav-link">Member</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#club" class="nav-link">Club</a>
+          </li>
+
+          <div class="nav-close" id="nav-close"><i class="bx bx-x"></i></div>
+        </ul>
       </div>
-      <ul class="navbar_menu">
-        <!--menu list-->
-        <li class="navbar_item">
-          <a href="#home" class="navbar_link" id="home-page">
-            Home
-          </a>
-        </li>
-        <li class="navbar_item">
-          <a href="#member" class="navbar_link" id="about-page">
-            About Us
-          </a>
-        </li>
-        <li class="navbar_item">
-          <a href="#about" class="navbar_link" id="services-page">
-            Services
-          </a>
-        </li>
-        <li class="navbar_button">
-          <a href="#" class="button"> Sign Up </a>
-        </li>
-      </ul>
-    </div>
-  </nav>
+
+      <div class="nav-open" id="nav-open"><i class="bx bx-grid-alt"></i></div>
+    </nav>
+  </header>
+
 
   <section class="section-main" id="home">
     <h1>Stage Fright</h1>
   </section>
+
+
   <!-- Member Sectiion -->
-  <div class="member" id="member">
-    <h1>Our Members</h1>
-    <div class="member-wrapper">
-      <div class="member-cards">
-        <img src="../res/Blondie_Small.jpg" alt="" />
-        <div class="overlay">
-          <h2>Aidien Gooden</h2>
-          <p>Lead Vocalist</p>
-          <a href="#">Learn More</a>
+  <section id="member">
+    <div class="member" id="member">
+      <h1>Our Members</h1>
+      <div class="member-wrapper">
+
+        <div class="member-cards">
+          <img src="../res/Blondie_Small.jpg" alt="" />
+          <div class="overlay">
+            <h2>Aidien Gooden</h2>
+            <p>Lead Vocalist</p>
+            <a href="#">Learn More</a>
+          </div>
         </div>
-      </div>
-      <div class="member-cards">
-        <img src="../res/Blondie_Small.jpg" alt="" />
-        <div class="overlay">
-          <h2>Sean Kalb</h2>
-          <p>Lead Guitarist</p>
-          <a href="#">Learn More</a>
+
+        <div class="member-cards">
+          <img src="../res/boy_Hoodie.png" alt="" />
+          <div class="overlay">
+            <h2>Sean Kalb</h2>
+            <p>Lead Guitarist</p>
+            <a href="#">Learn More</a>
+          </div>
         </div>
-      </div>
-      <div class="member-cards">
-        <img src="../res/Blondie_Small.jpg" alt="" />
-        <div class="overlay">
-          <h2>Jabari Hill</h2>
-          <p>Drummer</p>
-          <a href="#">Learn More</a>
+
+        <div class="member-cards">
+          <img src="../res/SF_TANKTOP.png" alt="" />
+          <div class="overlay">
+            <h2>Jabari Hill</h2>
+            <p>Drummer</p>
+            <a href="#">Learn More</a>
+          </div>
         </div>
-      </div>
-      <div class="member-cards">
-        <img src="../res/Blondie_Small.jpg" alt="" />
-        <div class="overlay">
-          <h2>Gabe Zeigler</h2>
-          <p>Bass Guitarist</p>
-          <!-- write an html attributse that contains index-->
-          <a href="#">Learn More</a>
+
+        <div class="member-cards">
+          <img src="../res/STAGE FRIGHT (1).png" alt="" />
+          <div class="overlay">
+            <h2>Gabe Zeigler</h2>
+            <p>Bass Guitarist</p>
+            <!-- write an html attributse that contains index-->
+            <a href="#">Learn More</a>
+          </div>
         </div>
       </div>
     </div>
-  </div>
+  </section>
+
+
 
   <!-- About Section -->
+  <section id="about">
+    <div class="about-band-section">
+      <h1 id="about-header">About</h1>
+      <p class="about-text">
+        Stage Fright is an up-and-coming rock band. We are
+      </p>
 
-  <div class="about-band-section" id="about">
-    <h1 id="about-header">About</h1>
-    <p class="about-text">
-      Stage Fright is an up-and-coming rock band. We are
-    </p>
+      <h1 id="band-member1">Aidien Gooden</h1>
+      <p class="band-member-text">
+        The lead vocalist of Stage Fright, He got into Music at a young age. His
+        father put him in choir and he gained a love of singing. Aidien is the
+        joy of the group he knows how to make people laugh.
+      </p>
+      <h1 id="band-member2">Sean Kalb</h1>
+      <p class="band-member-text"></p>
 
-    <h1 id="band-member1">Aidien Gooden</h1>
-    <p class="band-member-text">
-      The lead vocalist of Stage Fright, He got into Music at a young age. His
-      father put him in choir and he gained a love of singing. Aidien is the
-      joy of the group he knows how to make people laugh.
-    </p>
-    <h1 id="band-member2">Sean Kalb</h1>
-    <p class="band-member-text"></p>
-    <h1 id="band-member3">Jabari Hill</h1>
-    <p class="band-member-text">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam aperiam
-      sapiente non deleniti, nulla molestias possimus dolores reprehenderit
-      debitis? Impedit, repellendus aliquam? Itaque, doloribus. Soluta atque
-      magnam praesentium reiciendis amet.
-    </p>
-    <h1 id="band-member4">Gabe Zeigler</h1>
-    <p class="band-member-text"></p>
-  </div>
+      <h1 id="band-member3">Jabari Hill</h1>
+      <p class="band-member-text">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam aperiam
+        sapiente non deleniti, nulla molestias possimus dolores reprehenderit
+        debitis? Impedit, repellendus aliquam? Itaque, doloribus. Soluta atque
+        magnam praesentium reiciendis amet.
+      </p>
+
+      <h1 id="band-member4">Gabe Zeigler</h1>
+      <p class="band-member-text"></p>
+    </div>
+  </section>
+
+
   <footer>
     <script src="../js/index.js"></script>
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
       window.addEventListener("scroll", function () {
         document.body.classList.toggle("scrolled", window.scrollY > 775);
       });
-    </script>
+    </script> -->
   </footer>
 </body>
 
