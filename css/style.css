@@ -34,6 +34,15 @@
   list-style: none;
 }
 
+body{
+  background-image: url("https://images4.alphacoders.com/783/783866.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 85dvh;
+}
+
 /*Navbar Menu Classes*/
 .navbar {
   background: var(--navbar-bg-color);
@@ -111,8 +120,7 @@
 }
 
 #navbar_logo {
-  background: #ff8177;
-  background-image: linear-gradient(to bottom, #fd1d1d, #ffb199);
+  background-image: linear-gradient(to bottom, #907dda, #615399);
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
