@@ -167,7 +167,6 @@ body {
   justify-content: center;
   align-items: center;
   padding: 20px 100px;
-
   text-align: center;
 }
 
@@ -444,6 +443,11 @@ footer {
     margin: 2rem;
   }
 
+  .container {
+		margin-left: auto;
+		margin-right: auto;
+	}
+  
   /*Responsive Styling for Navbar*/
   .navbar_container {
     display: flex;
